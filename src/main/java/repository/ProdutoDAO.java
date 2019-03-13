@@ -24,6 +24,7 @@ public class ProdutoDAO implements Serializable {
     public void salvar(Produto p){
     	
         em.persist(p);
+        
         System.out.println("Salvando produto...");
        
     }

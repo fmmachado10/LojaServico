@@ -40,15 +40,15 @@ public class ProdutoController implements Serializable {
 
     public void cadastrar(){
     	
-        if (!listaDeProduto.contains(produtoForm)) {
+       // if (!listaDeProduto.contains(produtoForm)) {
         	
             produtoDAO.salvar(produtoForm);
             
-        }else{
+       // }else{
         	
-            produtoDAO.editar(produtoForm);
+         //   produtoDAO.editar(produtoForm);
             
-        }
+        //}
         
         limpar();
         

@@ -48,12 +48,10 @@
 			<h:panelGrid columns="2" cellpadding="2">
 
 				<p:outputLabel value="ID:" for="acID" />
-				<p:autoComplete id="acID"
-					value="#{produtoController.produtoForm.id}" readonly="true" />
+				<p:autoComplete id="acID" value="#{produtoController.produtoForm.id}" readonly="true" />
 
 				<p:outputLabel value="Nome:" for="acNome" />
-				<p:autoComplete id="acNome"
-					value="#{produtoController.produtoForm.nome}" />
+				<p:autoComplete id="acNome" value="#{produtoController.produtoForm.nome}" autocomplete="false" />
 					
 				<p:outputLabel value="Valor:" />
 				<p:inputNumber value="#{produtoController.produtoForm.valor}" decimalSeparator="," thousandSeparator="." symbol="R$" 

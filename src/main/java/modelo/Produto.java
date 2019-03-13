@@ -1,10 +1,15 @@
 package modelo;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.time.LocalDateTime;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 public class Produto implements Serializable {
@@ -21,7 +26,7 @@ public class Produto implements Serializable {
     @NotEmpty(message = "Nome deve ser preenchido!")
     private String nome;
     
-    @NotEmpty(message = "Nome deve ser preenchido!")
+    @NotEmpty(message = "Valor deve ser preenchido!")
     private BigDecimal valor;
     
     public Produto() {

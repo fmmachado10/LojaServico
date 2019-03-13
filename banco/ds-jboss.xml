@@ -1,6 +1,6 @@
 
 <!-- MySQL 8 -->
-<datasource jta="true" jndi-name="java:jboss/datasources/javaee8-mysql" pool-name="javaee8-mysql" enabled="true" use-ccm="false">
+<datasource jta="true" jndi-name="java:jboss/datasources/lojaservico" pool-name="lojaservico" enabled="true" use-ccm="false">
     <connection-url>jdbc:mysql://localhost:3306/lojaservico?useSSL=false&amp;useTimezone=true&amp;serverTimezone=UTC</connection-url>
     <driver-class>com.mysql.cj.jdbc.Driver</driver-class>
     <driver>mysql-connector-java-8.0.13.jar</driver>
@@ -14,3 +14,5 @@
         <exception-sorter class-name="org.jboss.jca.adapters.jdbc.extensions.mysql.MySQLExceptionSorter"/>
     </validation>
 </datasource>
+
+
